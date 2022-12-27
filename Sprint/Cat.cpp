@@ -25,3 +25,13 @@ void Cat::Print()
 	Participant::Print();
 }
 
+double Cat::GetJump()
+{
+	return max_jump;
+}
+
+double Cat::GetRun()
+{
+	return max_run;
+}
+

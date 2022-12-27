@@ -25,3 +25,13 @@ void Human::Print()
 	Participant::Print();
 }
 
+double Human::GetJump()
+{
+	return max_jump;
+}
+
+double Human::GetRun()
+{
+	return max_run;
+}
+

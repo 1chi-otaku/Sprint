@@ -15,5 +15,7 @@ public:
 	virtual void Jump() = 0;
 	virtual void Run() = 0;
 	virtual void Print();
+	virtual double GetJump() = 0;
+	virtual double GetRun() = 0;
 };
 

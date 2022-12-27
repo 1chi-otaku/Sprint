@@ -22,4 +22,3 @@ void Participant::Print()
 	cout << "Max jump distance - " << max_jump << endl;
 	cout << "Max run distance - " << max_run << endl;
 }
-

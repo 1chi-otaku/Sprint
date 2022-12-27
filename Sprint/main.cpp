@@ -3,18 +3,18 @@
 #include "Human.h"
 #include "Robot.h"
 #include "Cat.h"
+#include "Wall.h"
+#include "Treadmill.h"
 using namespace std;
 int main() {
+	
+	Participant* pointer = new Human("Jell",5,5);
+	
+	Wall wall(55555);
 
-	Human human("Vlad",2.6,5);
-	Robot robot("Robbie", 15, 5);
-	Cat karasik("Karasik", 65, 190);
+	bool karasik = wall.Overcome(pointer);
 
-	human.Print();
-	cout << endl;
-	robot.Print();
-	cout << endl;
-	karasik.Print();
+	cout << karasik;
 
 
 	return 0;

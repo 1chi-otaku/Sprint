@@ -25,3 +25,13 @@ void Robot::Print()
 	Participant::Print();
 }
 
+double Robot::GetJump()
+{
+	return max_jump;
+}
+
+double Robot::GetRun()
+{
+	return max_run;
+}
+

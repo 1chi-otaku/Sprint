@@ -9,5 +9,7 @@ public:
     void Jump();
     void Run();
     void Print();
+    double GetJump();
+    double GetRun();
 };
 
