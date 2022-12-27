@@ -5,6 +5,7 @@ using namespace std;
 class Participant
 {
 protected:
+	string type;
 	string name;
 	double max_jump;
 	double max_run;
