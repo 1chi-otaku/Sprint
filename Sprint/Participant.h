@@ -14,5 +14,6 @@ public:
 	Participant(string spec_name, double run, double jump);
 	virtual void Jump() = 0;
 	virtual void Run() = 0;
+	virtual void Print();
 };
 

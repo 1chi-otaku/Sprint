@@ -1,5 +1,5 @@
 #include "Participant.h"
-
+#include <iostream>
 Participant::Participant()
 {
 	type = "";
@@ -13,5 +13,13 @@ Participant::Participant(string spec_name, double run, double jump)
 	name = spec_name;
 	max_run = run;
 	max_jump = jump;
+}
+
+void Participant::Print()
+{
+	cout << "Type - " << type << endl;
+	cout << "Name - " << name << endl;
+	cout << "Max jump distance - " << max_jump << endl;
+	cout << "Max run distance - " << max_run << endl;
 }
 

@@ -4,9 +4,9 @@
 using namespace std;
 int main() {
 
-	Human human;
+	Human human("Vlad",2.6,5);
 
-	human.Jump();
+	human.Print();
 
 
 	return 0;

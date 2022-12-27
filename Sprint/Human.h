@@ -8,5 +8,6 @@ public:
     Human(string spec_name, double jump, double run);
     void Jump();
     void Run();
+    void Print();
 };
 

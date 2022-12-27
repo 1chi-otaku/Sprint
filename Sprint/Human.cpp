@@ -20,3 +20,8 @@ void Human::Run()
 	cout << type << " " << name << " is running!";
 }
 
+void Human::Print()
+{
+	Participant::Print();
+}
+
