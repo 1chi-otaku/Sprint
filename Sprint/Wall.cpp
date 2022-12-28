@@ -13,6 +13,7 @@ Wall::Wall(double wallheight)
 
 bool Wall::Overcome(Participant* part)
 {
+    part->Jump();
     if (part->GetJump() >= wall_height) {
         return true;
     }

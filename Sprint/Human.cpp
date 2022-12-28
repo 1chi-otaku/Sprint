@@ -12,12 +12,12 @@ Human::Human(string spec_name, double jump, double run):Participant(spec_name,ju
 
 void Human::Jump()
 {
-	cout << type << " " << name << " jumped!";
+	cout << type << " " << name << " jumped!" << endl;
 }
 
 void Human::Run()
 {
-	cout << type << " " << name << " is running!";
+	cout << type << " " << name << " is running!" << endl;
 }
 
 void Human::Print()

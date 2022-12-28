@@ -12,12 +12,12 @@ Robot::Robot(string spec_name, double jump, double run) :Participant(spec_name, 
 
 void Robot::Jump()
 {
-	cout << type << " " << name << " jumped!";
+	cout << type << " " << name << " jumped!" << endl;
 }
 
 void Robot::Run()
 {
-	cout << type << " " << name << " is running!";
+	cout << type << " " << name << " is running!" << endl;
 }
 
 void Robot::Print()

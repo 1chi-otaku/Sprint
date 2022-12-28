@@ -13,6 +13,7 @@ Treadmill::Treadmill(double rundistance)
 
 bool Treadmill::Overcome(Participant* part)
 {
+	part->Run();
 	if (part->GetRun() >= run_distance) {
 		return true;
 	}

@@ -12,12 +12,12 @@ Cat::Cat(string spec_name, double jump, double run) :Participant(spec_name, jump
 
 void Cat::Jump()
 {
-	cout << type << " " << name << " jumped!";
+	cout << type << " " << name << " jumped!" << endl;
 }
 
 void Cat::Run()
 {
-	cout << type << " " << name << " is running!";
+	cout << type << " " << name << " is running!" << endl;
 }
 
 void Cat::Print()
