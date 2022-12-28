@@ -13,13 +13,14 @@ void PrintObstMenu();
 
 int main() {
 	
-	Participant* participants[3];
-	Obstacle* obstacles[3];
+	const short AMOUNT_OF_DATA = 3;
+	Participant* participants[AMOUNT_OF_DATA];
+	Obstacle* obstacles[AMOUNT_OF_DATA];
 
 	int input;
 	cout << "Create 3 participants:";
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < AMOUNT_OF_DATA; i++)
 	{
 		system("cls");
 		PrintPartMenu();
@@ -50,10 +51,10 @@ int main() {
 	}
 
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < AMOUNT_OF_DATA; i++)
 	{
 		system("cls");
-		cout << "Create " << 3 - i << " obstacles:" << endl;;
+		cout << "Create " << AMOUNT_OF_DATA - i << " obstacles:" << endl;;
 		PrintObstMenu();
 		cin >> input;
 		if (input > 2 || input < 1) {
@@ -82,9 +83,9 @@ int main() {
 	cout << "Press any key to start competition!" << endl;
 	system("pause");
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < AMOUNT_OF_DATA; i++)
 	{
-		for (int j = 0; j < 3; j++)
+		for (int j = 0; j < AMOUNT_OF_DATA; j++)
 		{
 			bool overcome = obstacles[j]->Overcome(participants[i]);
 			if (overcome) {
