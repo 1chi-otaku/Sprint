@@ -10,17 +10,17 @@ Human::Human(string spec_name, double jump, double run):Participant(spec_name,ju
 	type = "Human";
 }
 
-void Human::Jump()
+void Human::Jump()const
 {
 	cout << type << " " << name << " jumped!" << endl;
 }
 
-void Human::Run()
+void Human::Run()const
 {
 	cout << type << " " << name << " is running!" << endl;
 }
 
-void Human::Print()
+void Human::Print()const
 {
 	Participant::Print();
 }
@@ -35,22 +35,22 @@ void Human::Init()
 	cin >> max_run;
 }
 
-double Human::GetJump()
+double Human::GetJump()const
 {
 	return max_jump;
 }
 
-double Human::GetRun()
+double Human::GetRun()const
 {
 	return max_run;
 }
 
-string Human::GetName()
+string Human::GetName()const
 {
 	return name;
 }
 
-string Human::GetType()
+string Human::GetType()const
 {
 	return type;
 }

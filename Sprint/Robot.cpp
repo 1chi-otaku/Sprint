@@ -10,17 +10,17 @@ Robot::Robot(string spec_name, double jump, double run) :Participant(spec_name, 
 	type = "Robot";
 }
 
-void Robot::Jump()
+void Robot::Jump()const
 {
 	cout << type << " " << name << " jumped!" << endl;
 }
 
-void Robot::Run()
+void Robot::Run()const
 {
 	cout << type << " " << name << " is running!" << endl;
 }
 
-void Robot::Print()
+void Robot::Print()const
 {
 	Participant::Print();
 }
@@ -35,22 +35,22 @@ void Robot::Init()
 	cin >> max_run;
 }
 
-double Robot::GetJump()
+double Robot::GetJump()const
 {
 	return max_jump;
 }
 
-double Robot::GetRun()
+double Robot::GetRun()const
 {
 	return max_run;
 }
 
-string Robot::GetName()
+string Robot::GetName()const
 {
 	return name;
 }
 
-string Robot::GetType()
+string Robot::GetType()const
 {
 	return type;
 }

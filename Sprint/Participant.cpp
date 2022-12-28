@@ -15,7 +15,7 @@ Participant::Participant(string spec_name, double run, double jump)
 	max_jump = jump;
 }
 
-void Participant::Print()
+void Participant::Print()const
 {
 	cout << "Type - " << type << endl;
 	cout << "Name - " << name << endl;

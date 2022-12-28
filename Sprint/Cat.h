@@ -6,13 +6,13 @@ class Cat :
 public:
     Cat();
     Cat(string spec_name, double jump, double run);
-    void Jump();
-    void Run();
-    void Print();
+    void Jump()const;
+    void Run()const;
+    void Print()const;
     void Init();
-    double GetJump();
-    double GetRun();
-    string GetName();
-    string GetType();
+    double GetJump()const;
+    double GetRun()const;
+    string GetName()const;
+    string GetType()const;
 };
 

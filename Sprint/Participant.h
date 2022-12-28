@@ -12,13 +12,13 @@ protected:
 public:
 	Participant();
 	Participant(string spec_name, double run, double jump);
-	virtual void Jump() = 0;
-	virtual void Run() = 0;
-	virtual void Print();
-	virtual double GetJump() = 0;
-	virtual double GetRun() = 0;
+	virtual void Jump() const = 0;
+	virtual void Run() const = 0;
+	virtual void Print() const;
+	virtual double GetJump()const = 0;
+	virtual double GetRun()const = 0;
 	virtual void Init() = 0;
-	virtual string GetType() = 0;
-	virtual string GetName() = 0;
+	virtual string GetType()const = 0;
+	virtual string GetName()const = 0;
 };
 
