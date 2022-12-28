@@ -11,5 +11,6 @@ public:
     Wall(double wallheight);
     bool Overcome(Participant* part);
     void Print();
+    void Init();
 };
 

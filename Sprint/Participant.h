@@ -17,5 +17,8 @@ public:
 	virtual void Print();
 	virtual double GetJump() = 0;
 	virtual double GetRun() = 0;
+	virtual void Init() = 0;
+	virtual string GetType() = 0;
+	virtual string GetName() = 0;
 };
 

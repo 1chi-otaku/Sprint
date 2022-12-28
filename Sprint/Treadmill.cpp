@@ -2,11 +2,13 @@
 Treadmill::Treadmill()
 {
 	run_distance = 150;
+	type = "Treadmill";
 }
 
 Treadmill::Treadmill(double rundistance)
 {
 	run_distance = rundistance;
+	type = "Treadmill";
 }
 
 bool Treadmill::Overcome(Participant* part)
@@ -21,4 +23,10 @@ bool Treadmill::Overcome(Participant* part)
 void Treadmill::Print()
 {
 	cout << "Treadmill Distance - " << run_distance << endl;
+}
+
+void Treadmill::Init()
+{
+	cout << "Enter run distance of treadmill: " << endl;
+	cin >> run_distance;
 }

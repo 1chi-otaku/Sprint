@@ -25,6 +25,16 @@ void Human::Print()
 	Participant::Print();
 }
 
+void Human::Init()
+{
+	cout << "Enter name of " << type << ": " << endl;
+	cin >> name;
+	cout << "Enter max jump distance of " << name << " the " << type << ": " << endl;
+	cin >> max_jump;
+	cout << "Enter max run distance of " << name << " the " << type << ": " << endl;
+	cin >> max_run;
+}
+
 double Human::GetJump()
 {
 	return max_jump;
@@ -33,5 +43,15 @@ double Human::GetJump()
 double Human::GetRun()
 {
 	return max_run;
+}
+
+string Human::GetName()
+{
+	return name;
+}
+
+string Human::GetType()
+{
+	return type;
 }
 

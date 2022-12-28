@@ -10,5 +10,6 @@ public:
     Treadmill(double rundistance);
     bool Overcome(Participant* part);
     void Print();
+    void Init();
 };
 

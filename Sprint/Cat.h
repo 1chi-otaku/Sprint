@@ -9,7 +9,10 @@ public:
     void Jump();
     void Run();
     void Print();
+    void Init();
     double GetJump();
     double GetRun();
+    string GetName();
+    string GetType();
 };
 
